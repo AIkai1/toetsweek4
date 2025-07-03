@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bugi</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <style>
+        body::-webkit-scrollbar {
+            display: none;
+        }
+
+        body {
+            -ms-overflow-style: none;  
+            scrollbar-width: none; 
+        }
+
+        *::-webkit-scrollbar {
+            display: none;
+        }
+        
+        * {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+      <link rel="icon" type="image/x-icon" href="icons/bug.png">
+</head>
+<body class="bg-gray-900">
+    <nav class="bg-gray-800 shadow-lg sticky top-0 z-50 border-b border-gray-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                            <img src="icons/bug.png" alt="">
+                        </div>
+                    <div class="ml-4">
+                        <h1 class="text-2xl font-bold text-white">Bugi</h1>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-white hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                    <a href="#collectie" class="text-gray-300 hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium">Collectie</a>
+                    <a href="#opening" class="text-gray-300 hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium">Opening</a>
+                    <a href="#duurzaamheid" class="text-gray-300 hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium">Duurzaamheid</a>
+                    <a href="contact.html" class="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button text-gray-300 hover:text-white focus:outline-none focus:text-white">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-menu hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gray-800 border-t border-gray-700">
+                <a href="#home" class="text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="#collectie" class="text-gray-300 hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium">Collectie</a>
+                <a href="#opening" class="text-gray-300 hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium">Opening</a>
+                <a href="#duurzaamheid" class="text-gray-300 hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium">Duurzaamheid</a>
+                <a href="contact.html" class="bg-blue-600 text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="relative bg-slate-800 text-white min-h-screen flex items-center">
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('icons/calypso-blue-hour-rotterdam-by-night-6153-5.jpg');"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 w-full">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 drop-shadow-lg">Welkom bij Bugi</h1>
+                <p class="text-xl md:text-3xl mb-8 opacity-90 drop-shadow-md">Hip, trendy en duurzaam - de toekomst van fashion</p>
+                <div class="bg-blue-600 text-white inline-block px-6 py-3 rounded-lg text-lg font-semibold mb-8 shadow-lg">
+                    Grand Opening: 08-08-2024 van 17:00 tot 23:00
+                </div>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#opening" class="bg-white text-slate-800 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300 shadow-lg">Meer over opening</a>
+                    <a href="#collectie" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-slate-800 transition duration-300 shadow-lg">Bekijk collectie</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-white mb-12">Onze Hip Fashion Collectie</h2>
+            <div class="relative overflow-hidden rounded-xl">
+                <div class="carousel-container flex transition-transform duration-500 ease-in-out">
+                    <div class="carousel-slide min-w-full">
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div class="bg-gray-700 h-80 rounded-lg flex items-center justify-center border border-gray-600">
+                                <img src="clothes/tailoredpants.png" class="w-60" alt="">
+                            </div>
+                            <div class="bg-gray-700 h-80 rounded-lg flex items-center justify-center border border-gray-600">
+                                <img src="clothes/1btn_peak.png" class="w-60" alt="">
+                            </div>
+                            <div class="bg-gray-700 h-80 rounded-lg flex items-center justify-center border border-gray-600">
+                                <img src="clothes/drmartens.jpg" class="w-60" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-slide min-w-full">
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div class="bg-gray-700 h-80 rounded-lg flex items-center justify-center border border-gray-600">
+                                <img src="clothes/wvest.jpg" class="w-60" alt="">
+                            </div>
+                            <div class="bg-gray-700 h-80 rounded-lg flex items-center justify-center border border-gray-600">
+                                <img src="clothes/yea.jpg" alt="">
+                            </div>
+                            <div class="bg-gray-700 h-80 rounded-lg flex items-center justify-center border border-gray-600">
+                                <img src="clothes/drs.jpg" class="w-60" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-slide min-w-full">
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div class="bg-gray-700 h-80 rounded-lg flex items-center justify-center border border-gray-600">
+                                <img src="clothes/fun.jpg" class="w-60" alt="">
+                            </div>
+                            <div class="bg-gray-700 h-80 rounded-lg flex items-center justify-center border border-gray-600">
+                                <img src="clothes/pan.jpg" class="w-60" alt="">
+                            </div>
+                            <div class="bg-gray-700 h-80 rounded-lg flex items-center justify-center border border-gray-600">
+                              <img src="clothes/lot.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn carousel-prev absolute left-4 top-1/2 transform -translate-y-1/2 bg-gray-700 hover:bg-gray-600 rounded-full p-2 shadow-lg border border-gray-600">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                </button>
+                <button class="carousel-btn carousel-next absolute right-4 top-1/2 transform -translate-y-1/2 bg-gray-700 hover:bg-gray-600 rounded-full p-2 shadow-lg border border-gray-600">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="collectie" class="py-16 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-white mb-12">Wat vind je bij ons?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-gray-800 rounded-lg shadow-md p-6 text-center hover:shadow-lg transition duration-300 border border-gray-700 hover:border-blue-500">
+                    <div class="w-16 h-16 bg-slate-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-white">T-shirts & Tops</h3>
+                    <p class="text-gray-300">Unieke designs en vintage finds</p>
+                </div>
+                <div class="bg-gray-800 rounded-lg shadow-md p-6 text-center hover:shadow-lg transition duration-300 border border-gray-700 hover:border-blue-500">
+                    <div class="w-16 h-16 bg-slate-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-white">Broeken & Jeans</h3>
+                    <p class="text-gray-300">Van streetwear tot designer pieces</p>
+                </div>
+                <div class="bg-gray-800 rounded-lg shadow-md p-6 text-center hover:shadow-lg transition duration-300 border border-gray-700 hover:border-blue-500">
+                    <div class="w-16 h-16 bg-slate-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-white">Jurken & Rokken</h3>
+                    <p class="text-gray-300">Voor elke gelegenheid</p>
+                </div>
+                <div class="bg-gray-800 rounded-lg shadow-md p-6 text-center hover:shadow-lg transition duration-300 border border-gray-700 hover:border-blue-500">
+                    <div class="w-16 h-16 bg-slate-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-white">Schoenen & Accessoires</h3>
+                    <p class="text-gray-300">Complete je outfit</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="opening" class="py-16 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-white mb-4">Grand Opening Feest!</h2>
+                <p class="text-xl text-gray-300">08 augustus 2024 • 17:00 - 23:00</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-slate-700 rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2 text-white">Live DJ & Muziek</h3>
+                                <p class="text-gray-300">Geniet van de beste beats terwijl je door onze collectie bladert</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-slate-700 rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2 text-white">Cocktailbar</h3>
+                                <p class="text-gray-300">Exclusieve cocktails en drankjes voor alle bezoekers</p>
+                            </div>          
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-slate-700 rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2 text-white">Speciale Aanbiedingen</h3>
+                                <p class="text-gray-300">Opening deals die je niet wilt missen!</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-orange-900 rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2 text-white">Gratis Cap!</h3>
+                                <p class="text-gray-300">Voor de eerste 100 bezoekers - limited edition Bugi cap</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-slate-700 rounded-xl p-8 text-white text-center border border-slate-600">
+                    <h3 class="text-2xl font-bold mb-4">Save the Date!</h3>
+                    <div class="text-4xl font-bold mb-2">08-08-2024</div>
+                    <div class="text-xl mb-4">17:00 - 23:00</div>
+                    <div class="bg-slate-600 rounded-lg p-4 mb-4">
+                        <p class="font-semibold">Kruiskade 88</p>
+                        <p>Rotterdam</p>
+                    </div>
+                    <p class="text-sm opacity-90">Zorg dat je er bij bent!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-16 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-white mb-12">Bezoek onze winkel</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6 text-white">Adresgegevens</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            <div>
+                                <p class="font-semibold text-white">Kruiskade 88</p>
+                                <p class="text-gray-300">3012 EH Rotterdam</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <div>
+                                <p class="font-semibold text-white">Openingstijden</p>
+                                <p class="text-gray-300">Ma-Za: 10:00 - 18:00</p>
+                                <p class="text-gray-300">Zo: 12:00 - 17:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2460.6435088255353!2d4.469863995433358!3d51.92221489948459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c434a71fbb0a69%3A0xe27294f12cfa5e9!2sKruiskade%2088%2C%203012%20EH%20Rotterdam!5e0!3m2!1snl!2snl!4v1751544114956!5m2!1snl!2snl" class="w-full h-64 rounded-lg border border-gray-600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="duurzaamheid" class="py-16 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-white mb-4">Duurzaamheid & Community</h2>
+                <p class="text-xl text-gray-300">Samen bouwen we aan een betere toekomst voor fashion</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-green-800 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-white">Klimaatdoelen</h3>
+                    <p class="text-gray-300">We streven naar CO2-neutrale operaties en ondersteunen duurzame modemerken die onze planeet respecteren.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-blue-800 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-white">Kledingruil Community</h3>
+                    <p class="text-gray-300">Deel, ruil en ontdek nieuwe stijlen met onze community. Geef je kleding een tweede leven!</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-slate-700 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-white">Lokale Samenwerking</h3>
+                    <p class="text-gray-300">We werken samen met lokale ontwerpers en sociale initiatieven voor een betere samenleving.</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-gradient-to-r from-gray-700 to-gray-600 rounded-xl p-8 border border-gray-600">
+                <div class="text-center">
+                    <h3 class="text-2xl font-bold text-white mb-4">Word onderdeel van onze community!</h3>
+                    <p class="text-gray-300 mb-6">Meld je aan voor onze nieuwsbrief en blijf op de hoogte van swap events, nieuwe collecties en duurzaamheidsinitiatieven.</p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
+                        <input type="email" placeholder="Je e-mailadres" class="flex-1 px-4 py-2 border border-gray-500 bg-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-400">
+                        <button class="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">Aanmelden</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                            <img src="icons/bug.png" alt="">
+                            <div class="ml-2">
+                                <h3 class="text-xl font-bold text-white">Bugi</h3>
+                        </div>
+                    </div>
+                    <p class="text-gray-400">Hip, trendy en duurzaam. De toekomst van fashion begint hier.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p>Kruiskade 88</p>
+                        <p>3012 EH Rotterdam</p>
+                        <p>info@bugi.nl</p>
+                        <p>010-123-4567</p>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Openingstijden</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p>Maandag - Zaterdag: 10:00 - 18:00</p>
+                        <p>Zondag: 12:00 - 17:00</p>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Volg ons</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <span class="sr-only">Instagram</span>
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" d="M12.017 0C8.396 0 7.989.013 7.041.072 6.096.13 5.45.33 4.892.628c-.614.319-1.13.748-1.465 1.29C2.98 2.71 2.76 3.42 2.76 4.369v15.262c0 .948.22 1.658.667 2.449.335.542.851.971 1.465 1.29.558.298 1.203.498 2.149.557.948.059 1.355.072 4.976.072s4.029-.013 4.976-.072c.946-.059 1.592-.259 2.149-.557.614-.319 1.13-.748 1.465-1.29.447-.791.667-1.501.667-2.449V4.369c0-.948-.22-1.658-.667-2.449C19.777.895 19.261.466 18.647.147 18.089-.151 17.444-.351 16.498-.41 15.55-.469 15.143-.482 11.522-.482H12.017z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <span class="sr-only">TikTok</span>
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-.88-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <span class="sr-only">Facebook</span>
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Bugi. Alle rechten voorbehouden.</p>
+            </div>
+        </div>
+    </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
